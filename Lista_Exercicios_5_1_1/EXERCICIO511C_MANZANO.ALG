@@ -18,7 +18,7 @@ Inicio
          soma <- soma+contadora
       fimse
       contadora <- contadora + 1
-      escreval ("O resultado da soma dos números pares é: ",soma)
-   fimenquanto
 
+   fimenquanto
+   escreval ("O resultado da soma dos números pares é: ",soma)
 Fimalgoritmo
