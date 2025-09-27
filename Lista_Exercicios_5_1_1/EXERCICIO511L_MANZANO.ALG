@@ -1,10 +1,10 @@
-Algoritmo "EXERCICIO521I_MANZANO"
+Algoritmo "exercicio511l_Manzano"
 // Disciplina   : [Lógica de Programação]
 // Professor   : Jailson Costa dos Santos
-// Descrição   : Solicita valores e roda até que um valor negativo seja informado. Ao final, exibe o maior e menor valor informados pelo usuário
+// Descrição   : Solicita valores positivos e só para ao inserir um valor negativo, após finalizar, exibe o maior e o menor valor informado
 // Autor(a)    : Laura Sena
-// Exercício 5.2.1 1)i - Apostila Livro de Algoritmos Manzano
-// Data atual  : 21/09/2025
+// Exercício lista 5.1.1 - l - Apostila Livro de Algoritmos Manzano
+// Data atual  : 14/09/2025
 Var
    // Seção de Declarações das variáveis
    numero, numero_1, maior_numero, menor_numero : inteiro
@@ -15,8 +15,9 @@ Inicio
    numero_1 <- 1
    escreval ("Este programa funcionará até que um valor negativo seja inserido.")
    escreval ("")
-
-   repita
+   escreval("Digite um número inteiro:")
+   leia(numero)
+   enquanto (numero >= 0) faca
       escreval("Digite um número inteiro:")
       leia(numero)
 
@@ -26,7 +27,7 @@ Inicio
             maior_numero <- numero
             menor_numero <- numero
             numero_1 <- 0 //muda o validador para não entrar no 'se' novamente
-            
+
          senao
             se (numero > maior_numero) entao
                maior_numero <- numero
@@ -36,11 +37,9 @@ Inicio
             fimse
          fimse
       fimse
+   fimenquanto
 
-   ate (numero < 0)
    escreval ("")
    escreval ("Maior número positivo:",maior_numero)
    escreval ("Menor número positivo:",menor_numero)
-
-
 Fimalgoritmo
